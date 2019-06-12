@@ -1,14 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PlayerCollisions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\player\PlayerCollisions.cs">
     <Files>
-      <File FileName="Assets\scripts\PlayerCollisions.cs" Line="12" Column="34" />
-      <File FileName="Assets\scripts\First.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Test.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Nourse1.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Cc.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Rj.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\TheLight.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\player\PowerCell.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\player\PlayerCollisions.cs" Line="3" Column="1" />
+      <File FileName="Assets\scripts\player\DoorManager.cs" Line="28" Column="1" />
+      <File FileName="Assets\scripts\player\Tg.cs" Line="32" Column="35" />
+      <File FileName="Assets\scripts\player\Inventory.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\player\PlayerDoor.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
