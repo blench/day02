@@ -27,7 +27,6 @@ public class Tg : MonoBehaviour
 										doorLight.color = Color.green;
 								}
 								transform.FindChild ("door").SendMessage ("DoorCheck");
-				
 						} else {
 								hint.text = "这扇门需要你收集足够的能量源物体才能启动！";
 								doorCloseSound.audio.Play ();

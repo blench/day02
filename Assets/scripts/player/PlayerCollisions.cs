@@ -59,15 +59,36 @@ public class PlayerCollisions : MonoBehaviour
 				}
 		}*/
 		
+		public bool campFire = false;
+		public GameObject smokeVar;
+		public GameObject fireVar;
+		public GUIText collectHelpText;
+		private float displayTime = 0.0f;
+		
 		void Update ()
 		{
 				RaycastHit hit = new RaycastHit ();
+				displayTime += Time.deltaTime;
 				if (Physics.Raycast (transform.position, transform.forward, out hit, 3)) {
 						if (hit.collider.gameObject.tag.Equals ("playerDoor")) {
 								GameObject currentDoor = hit.collider.gameObject;
 								currentDoor.SendMessage ("DoorCheck");
-				
 						}
+				}
+		}
+		
+		void OnControllerColliderHit (ControllerColliderHit hit)
+		{
+				if (hit.gameObject.tag.Equals ("campFire") && Inventory.hasMatch && !campFire) {
+						smokeVar.renderer.enabled = true;
+						fireVar.renderer.enabled = true;
+						campFire = true;
+						hit.gameObject.audio.Play ();
+				}
+
+				if (hit.gameObject.tag.Equals ("campFire") && !Inventory.hasMatch && !campFire) {
+						collectHelpText.enabled = true;
+						collectHelpText.text = "你还没有收集火柴，请先去小屋收集火柴再来点燃篝火！";
 				}
 		}
 }

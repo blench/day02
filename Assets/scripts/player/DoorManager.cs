@@ -27,7 +27,7 @@ public class DoorManager : MonoBehaviour
 		
 				if (hintText.enabled) {
 						hintTime += Time.deltaTime;
-						if (hintTime > 4.0f) {
+						if (hintTime > 8.0f) {
 								hintText.enabled = false;
 								hintTime = 0.0f;
 						}
@@ -53,7 +53,7 @@ public class DoorManager : MonoBehaviour
 	
 		void DoorCheck ()
 		{
-				if (!doorIsOpen) {
+				if (!doorIsOpen && Inventory.charge == 4) {
 						door (true, doorOpenSound, "openDoor");
 				}
 		}

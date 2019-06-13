@@ -1,17 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\player\PlayerCollisions.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\player\Tg.cs">
     <Files>
-      <File FileName="Assets\scripts\player\PowerCell.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\player\PlayerCollisions.cs" Line="3" Column="1" />
-      <File FileName="Assets\scripts\player\DoorManager.cs" Line="28" Column="1" />
-      <File FileName="Assets\scripts\player\Tg.cs" Line="32" Column="35" />
-      <File FileName="Assets\scripts\player\Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\player\PlayerDoor.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\CoconutThrower.cs" Line="24" Column="13" />
+      <File FileName="Assets\scripts\Mat.cs" Line="11" Column="1" />
+      <File FileName="Assets\scripts\CoconutWin.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\player\Tg.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\yk\Documents\day02\Assets\scripts\player\Tg.cs" line="24" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
