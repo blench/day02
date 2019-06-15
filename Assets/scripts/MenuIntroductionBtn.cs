@@ -1,0 +1,27 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class MenuIntroductionBtn : MonoBehaviour
+{
+		public string levelLoad;
+		public Texture2D normalTexture;
+		public Texture2D rollerTexture;
+		public AudioClip beep;
+	
+		void OnMouseEnter ()
+		{
+				guiTexture.texture = rollerTexture;
+		}
+	
+		void OnMouseExit ()
+		{
+				guiTexture.texture = normalTexture;
+		}
+	
+		IEnumerator OnMouseDown ()
+		{
+				audio.PlayOneShot (beep);
+				yield return new WaitForSeconds (0.35f);
+				Application.LoadLevel ("introduction");
+		}
+}

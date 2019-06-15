@@ -13,12 +13,17 @@ public class Inventory : MonoBehaviour
 		public GUITexture matchHintText;
 		public AudioClip matchSound;
 		public static bool hasMatch = false;
+		public static Transform player ;
 		// Use this for initialization
 		void Start ()
 		{
 				charge = 0;
 		}
-	
+		
+		void Update ()
+		{
+				//Transform tran = Transform.Instantiate (player, transform.position, transform.rotation);
+		}
 		// Update is called once per frame电池拾取函数
 		void CellPickUp ()
 		{

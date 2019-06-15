@@ -46,17 +46,29 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Necromancer GUI\WWWTest.cs" />
+     <Compile Include="Assets\scripts\Animation01.cs" />
+     <Compile Include="Assets\scripts\Arr.cs" />
+     <Compile Include="Assets\scripts\ArrayHit.cs" />
      <Compile Include="Assets\scripts\Cc.cs" />
      <Compile Include="Assets\scripts\CoconutThrower.cs" />
      <Compile Include="Assets\scripts\CoconutWin.cs" />
+     <Compile Include="Assets\scripts\Engineer.cs" />
+     <Compile Include="Assets\scripts\EulerAngles.cs" />
      <Compile Include="Assets\scripts\First.cs" />
+     <Compile Include="Assets\scripts\GUITest.cs" />
+     <Compile Include="Assets\scripts\Introduction.cs" />
      <Compile Include="Assets\scripts\Mat.cs" />
      <Compile Include="Assets\scripts\MatchTrigger.cs" />
+     <Compile Include="Assets\scripts\MenuExitBtn.cs" />
+     <Compile Include="Assets\scripts\MenuIntroductionBtn.cs" />
+     <Compile Include="Assets\scripts\MenuPlayBtn.cs" />
      <Compile Include="Assets\scripts\Nourse1.cs" />
      <Compile Include="Assets\scripts\PowerHolder.cs" />
      <Compile Include="Assets\scripts\Rj.cs" />
      <Compile Include="Assets\scripts\TargetCollider.cs" />
      <Compile Include="Assets\scripts\Test.cs" />
+     <Compile Include="Assets\scripts\URef.cs" />
      <Compile Include="Assets\scripts\Xhcoco.cs" />
      <Compile Include="Assets\scripts\player\DoorManager.cs" />
      <Compile Include="Assets\scripts\player\Inventory.cs" />
@@ -65,6 +77,7 @@
      <Compile Include="Assets\scripts\player\PowerCell.cs" />
      <Compile Include="Assets\scripts\player\Tg.cs" />
      <Compile Include="Assets\scripts\player\TheLight.cs" />
+     <Compile Include="Assets\scripts\rotate\RotateAroundZ.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
@@ -103,6 +116,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Necromancer GUI\Kingthings.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
@@ -121,6 +135,7 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Necromancer GUI\Readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
