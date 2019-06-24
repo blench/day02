@@ -64,7 +64,8 @@ public class PlayerCollisions : MonoBehaviour
 		public GameObject fireVar;
 		public GUIText collectHelpText;
 		private float displayTime = 0.0f;
-		
+		public GameObject WinObjectVar;
+
 		void Update ()
 		{
 				RaycastHit hit = new RaycastHit ();
@@ -84,6 +85,8 @@ public class PlayerCollisions : MonoBehaviour
 						fireVar.renderer.enabled = true;
 						campFire = true;
 						hit.gameObject.audio.Play ();
+//						WinObjectVar = Instantiate (WinObjectVar);
+
 				}
 
 				if (hit.gameObject.tag.Equals ("campFire") && !Inventory.hasMatch && !campFire) {

@@ -75,6 +75,12 @@ public class DoorManager : MonoBehaviour
 
 		void WindowContain (int windowID)
 		{
+				if (GUI.Button (new Rect (70, 10, 100, 20), "读取进度")) {
+						PlayerRead ();
+				}
+				if (GUI.Button (new Rect (70, 40, 100, 20), "保存进度")) {
+						PlayerSave ();
+				}
 				if (GUI.Button (new Rect (70, 70, 100, 20), "关闭音乐")) {
 						GameObject.Find ("Terrain").GetComponent<AudioSource> ().enabled = false;
 				}
@@ -89,6 +95,53 @@ public class DoorManager : MonoBehaviour
 				}
 
 				GUI.DragWindow (new Rect (0, 0, 1000, 1000));
+		}
+
+		void PlayerSave ()
+		{
+				PlayerPrefs.SetInt ("PlayerCharge", Inventory.charge);
+				PlayerPrefs.SetInt ("PlayerLevel", Inventory.Level);
+				PlayerPrefs.SetInt ("PlayerExp", Inventory.Exp);
+				PlayerPrefs.SetInt ("PlayerHP", Inventory.HP);
+				PlayerPrefs.SetFloat ("PlayerPx", Inventory.player.position.x);
+				PlayerPrefs.SetFloat ("PlayerPy", Inventory.player.position.y);
+				PlayerPrefs.SetFloat ("PlayerPz", Inventory.player.position.z);
+				PlayerPrefs.SetString ("PlayerTask", Inventory.CurrentTask);
+				PlayerPrefs.Save ();
+		}
+
+		void PlayerRead ()
+		{
+				if (PlayerPrefs.HasKey ("PlayerCharge")) {
+						Inventory.charge = PlayerPrefs.GetInt ("PlayerCharge");
+				}
+
+				if (PlayerPrefs.HasKey ("PlayerLevel")) {
+						Inventory.Level = PlayerPrefs.GetInt ("PlayerLevel");
+				}
+				if (PlayerPrefs.HasKey ("PlayerExp")) {
+						Inventory.Exp = PlayerPrefs.GetInt ("PlayerExp");
+				}
+		
+				if (PlayerPrefs.HasKey ("PlayerHP")) {
+						Inventory.HP = PlayerPrefs.GetInt ("PlayerHP");
+				}
+
+				if (PlayerPrefs.HasKey ("PlayerPx")) {
+						Inventory.player.position = new Vector3 (PlayerPrefs.GetFloat ("PlayerPx"), 0.0f, 0.0f);
+				}
+		
+				if (PlayerPrefs.HasKey ("PlayerPy")) {
+						Inventory.player.position = new Vector3 (0.0f, PlayerPrefs.GetFloat ("PlayerPy"), 0.0f);
+				}
+
+				if (PlayerPrefs.HasKey ("PlayerPz")) {
+						Inventory.player.position = new Vector3 (0.0f, 0.0f, PlayerPrefs.GetFloat ("PlayerPz"));
+				}
+
+				if (PlayerPrefs.HasKey ("PlayerTask")) {
+						Inventory.CurrentTask = PlayerPrefs.GetString ("PlayerTask");
+				}
 		}
 
 }

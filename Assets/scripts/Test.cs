@@ -34,7 +34,7 @@ public class Test : MonoBehaviour
 				}
 				moveDirection.y -= gravity * Time.deltaTime;
 
-				CharacterController controller = GetComponent<CharacterController> ();
+//				CharacterController controller = GetComponent<CharacterController> ();
 //				CollisionFlags flags = controller.Move (moveDirection * Time.deltaTime);
 //				grounded = (flags != null & CollisionFlags.CollidedBelow != 0);
 		}

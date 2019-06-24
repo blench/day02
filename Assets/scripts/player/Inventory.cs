@@ -14,6 +14,10 @@ public class Inventory : MonoBehaviour
 		public AudioClip matchSound;
 		public static bool hasMatch = false;
 		public static Transform player ;
+		public static int Level;
+		public static int Exp;
+		public static int HP;
+		public static string CurrentTask;
 		// Use this for initialization
 		void Start ()
 		{
@@ -27,6 +31,7 @@ public class Inventory : MonoBehaviour
 		// Update is called once per frame电池拾取函数
 		void CellPickUp ()
 		{
+				//charge = 4;
 				if (!powerGUI.enabled) {
 						powerGUI.enabled = true;
 				}

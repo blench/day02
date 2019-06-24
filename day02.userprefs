@@ -1,17 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\player\Inventory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Chess.cs">
     <Files>
-      <File FileName="Assets\scripts\Animation01.cs" Line="10" Column="25" />
-      <File FileName="Assets\scripts\Introduction.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\MenuPlayBtn.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\MatchTrigger.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Mat.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\GUITest.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\Engineer.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\URef.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\EulerAngles.cs" Line="16" Column="39" />
-      <File FileName="Assets\scripts\player\Inventory.cs" Line="14" Column="31" />
+      <File FileName="Assets\scripts\Cc.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Chess.cs" Line="218" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
